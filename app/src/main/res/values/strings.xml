@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Emoji Music</string>
+
+    <string name="play_button">ИГРАТЬ</string>
+
+    <string name="how_play_button">КАК ИГРАТЬ</string>
+
+    <string name="records_button">случайный уровень</string>
+    <string name="find_autor_button">Узнать автора\n(100 монет)</string>
+
+    <string name="find_answer_button">Узнать ответ\n(250 монет)</string>
+    <string name="low_add_my">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="low_add">ca-app-pub-4978839534324790/7320445841</string>
+    <string name="low_add_size">SMART_BANNER</string>
+
+    <string name="admobButton">Бесплатные монеты</string>
+    <string name="howPlayString">Основные правила игры:\n
+    В данной игре вы увидите различные emoji и вы должны угадать название песни\n
+    Например:\n
+    Вам показывают</string>
+    <string name="subHowPlayString">И вы понимаете, что тут подразумевается песня Пьера Нарциса\n
+        "Шоколадный Заяц"</string>
+
+    <string name="ok">Проверить</string>
+    <string name="finalString">Поздравляем!!!\n
+    Вы прошли все имеющиеся уровни\n
+    В ближайшее время мы добавим новые уровни и вы сможете продолжить играть\n
+        Надеемся на ваше понимание\n
+    А сейчас вы можете сыграть в случайный, уже пройденый уровень</string>
+    <string name="how_play_emoji">🍫🐰</string>
+    <string name="fifth_buy_coin">пятая покупка</string>
+    <string name="fourth_buy">четвёртая покупка</string>
+    <string name="second_btn_buy_coin">вторая покупка</string>
+    <string name="third_btn_buy_coin">третья покупка</string>
+    <string name="first_buy_coin">первая покупка</string>
+
+    <plurals name="coins">
+        <item quantity="many">0</item>
+    </plurals>
+</resources>

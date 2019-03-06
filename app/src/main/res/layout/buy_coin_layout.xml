@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/first_btn_buy_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/adMob_button_in_buy"
+            android:layout_alignRight="@+id/adMob_button_in_buy"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20sp"
+            android:layout_above="@id/second_btn_buy_coin"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/first_buy_coin"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/second_btn_buy_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/third_btn_buy_coin"
+            android:layout_alignLeft="@id/adMob_button_in_buy"
+            android:layout_alignRight="@+id/adMob_button_in_buy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/second_btn_buy_coin"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/third_btn_buy_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fourth_btn_buy_coin"
+            android:layout_alignLeft="@id/adMob_button_in_buy"
+            android:layout_alignRight="@+id/adMob_button_in_buy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/third_btn_buy_coin"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/fourth_btn_buy_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/adMob_button_in_buy"
+            android:layout_alignRight="@+id/adMob_button_in_buy"
+            android:layout_centerInParent="true"
+
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/fourth_buy"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/fifth_btn_buy_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/adMob_button_in_buy"
+            android:layout_alignRight="@+id/adMob_button_in_buy"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20sp"
+            android:layout_below="@id/fourth_btn_buy_coin"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/fifth_buy_coin"
+            android:textColor="#ffffff" />
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="@string/low_add_size"
+            ads:adUnitId="@string/low_add" />
+
+        <Button
+            android:id="@+id/adMob_button_in_buy"
+            style="@style/RoundedCornerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/fifth_btn_buy_coin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/btn_rounded_corner"
+            android:padding="8sp"
+            android:text="@string/admobButton" />
+
+        <TextView
+            android:id="@+id/money_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="40sp"
+            android:textColor="#ffeb3b"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginRight="3sp"
+            android:layout_marginTop="35sp"
+            android:layout_toLeftOf="@id/money_textView"
+            android:layout_toStartOf="@id/money_textView"
+            ads:srcCompat="@drawable/coins" />
+    </RelativeLayout>
+</FrameLayout>

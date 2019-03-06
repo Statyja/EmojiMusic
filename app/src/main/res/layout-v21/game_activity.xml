@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            android:id="@+id/textView_with_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:textColor="#ffffff"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/button_OK"
+            style="@android:style/TextAppearance.Material.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_with_emoji"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="167dp"
+            android:text="@string/ok" />
+
+        <TextView
+            android:id="@+id/textView_with_autor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView_with_lvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/editText_answer"
+            android:layout_toStartOf="@+id/editText_answer"
+            tools:ignore="RelativeOverlap" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button_OK"
+            android:layout_marginTop="53dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_find_autor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/find_autor_button"
+                style="@style/RoundedCornerButton" />
+
+            <Button
+                android:id="@+id/button_find_answer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:text="@string/find_answer_button"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_answer"
+            style="@android:style/TextAppearance.Material.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="47dp"
+            android:ems="10"
+            android:inputType="text"
+            android:selectAllOnFocus="false"
+            android:singleLine="true" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="@string/low_add_size"
+            ads:adUnitId="@string/low_add" />
+
+        <TextView
+            android:id="@+id/wrongTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_with_autor_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-50dp"
+            android:textSize="21sp"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/coin_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginTop="17dp" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <Button
+            android:id="@+id/button_OK2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/finalTextView"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="20sp"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/records_button"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/finalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="@string/finalString"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="@string/low_add_size"
+            ads:adUnitId="@string/low_add" />
+    </RelativeLayout>
+
+</FrameLayout>

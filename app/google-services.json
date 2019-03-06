@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "533037222010",
+    "firebase_url": "https://emojimusic-cf9b8.firebaseio.com",
+    "project_id": "emojimusic-cf9b8",
+    "storage_bucket": "emojimusic-cf9b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533037222010:android:515a6f51c2115571",
+        "android_client_info": {
+          "package_name": "com.example.statyja.emojimusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533037222010-jpbs8qfjlp3gr9eubp3oh48n2268l0h8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.statyja.emojimusic",
+            "certificate_hash": "dc5f6901469aafc3c6ea50528b33c779c1e27ea0"
+          }
+        },
+        {
+          "client_id": "533037222010-vs1cqokppu25simc1bcjeq98h3c6jfp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlIQwucuPaGPNqpSZ6BZhIEp8IuMoHBoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533037222010-vs1cqokppu25simc1bcjeq98h3c6jfp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533037222010:android:8c3dcd390e620833",
+        "android_client_info": {
+          "package_name": "com.statyja.emojimusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533037222010-9tkdgc2aus0qksgqh31oja6r9tdf8n64.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.statyja.emojimusic",
+            "certificate_hash": "dc5f6901469aafc3c6ea50528b33c779c1e27ea0"
+          }
+        },
+        {
+          "client_id": "533037222010-vs1cqokppu25simc1bcjeq98h3c6jfp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlIQwucuPaGPNqpSZ6BZhIEp8IuMoHBoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533037222010-vs1cqokppu25simc1bcjeq98h3c6jfp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

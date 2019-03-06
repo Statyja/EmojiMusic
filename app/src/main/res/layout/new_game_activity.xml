@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            ads:srcCompat="@drawable/coins"
+            android:layout_marginTop="35sp"
+            android:layout_marginRight="3sp"
+            android:layout_toLeftOf="@id/coin_textView"
+            android:layout_toStartOf="@id/coin_textView" />
+
+        <TextView
+            android:id="@+id/textView_with_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/editText_answer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70sp"
+            android:textColor="#ffffff"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/button_OK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_answer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/ok"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView_with_autor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/textView_with_emoji"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_with_lvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="30sp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/lvl_rounded_corner"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/button_OK"
+            android:layout_marginTop="20sp"
+            android:divider="@drawable/separator"
+            android:showDividers="middle"
+            android:dividerPadding="3dp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_find_autor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rounded_corner"
+                android:text="@string/find_autor_button"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button_find_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rounded_corner"
+                android:text="@string/find_answer_button"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@drawable/my_edit_text"
+            android:selectAllOnFocus="false"
+            android:textColor="#ffffff"
+            android:inputType="textNoSuggestions"
+            android:singleLine="true" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="@string/low_add_size"
+            ads:adUnitId="@string/low_add" />
+
+        <TextView
+            android:id="@+id/wrongTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/editText_answer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20sp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/coin_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="40sp"
+            android:textColor="#ffeb3b"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</FrameLayout>

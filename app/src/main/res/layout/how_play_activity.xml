@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/howPlayString"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/how_play_emoji"
+        android:layout_below="@id/textView"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+    <TextView
+        android:id="@+id/textViewSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subHowPlayString"
+        android:layout_below="@id/textView1"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="@string/low_add_size"
+        ads:adUnitId="@string/low_add"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
